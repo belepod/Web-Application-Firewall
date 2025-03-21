@@ -65,8 +65,10 @@ source venv/bin/activate
 `pip install -r requirements.txt`
 ## 🎮 Usage
 ### 🔥 Run the Application
-`python app.py`
-Visit http://127.0.0.1:5000/ in your browser.
+`python app.py` : Web-App without WaF protection
+`python appwaf.py`  : Web-App with WaF protection
+`python standardwaf.py` : Only the WaF Inplementation (No Database)
+- Visit http://127.0.0.1:5000/ in your browser.
 ## 🧑‍💻 How to Perform SQL Injection
 ### 🛑 1️⃣ Bypass Login Authentication
 Username: ' OR 1=1 --
