@@ -1,6 +1,6 @@
 # 🛒 Flask E-Commerce Web Application with Web-Application-Firewall 
 
-This is a basic Flask e-commerce web application with user authentication, product listing, and a cart system. The application is intentionally vulnerable to SQL Injection, XSS Payloads, Javascript Payloads, etc to demonstrate common web application security risks.
+This is a basic Flask e-commerce web application with user authentication, product listing, and a cart system. The `app.py` application is intentionally vulnerable to SQL Injection, XSS Payloads, Javascript Payloads, etc to demonstrate common web application security risks. `appwaf.py` is protected with a Web-Application-Firewall to prevent attack above mentioned. 
 
 ---
 
@@ -65,9 +65,9 @@ source venv/bin/activate
 `pip install -r requirements.txt`
 ## 🎮 Usage
 ### 🔥 Run the Application
-`python app.py` : Web-App without WaF protection
-`python appwaf.py`  : Web-App with WaF protection
-`python standardwaf.py` : Only the WaF Inplementation (No Database)
+`python app.py` : Web-App without WaF protection<br/>  
+`python appwaf.py`  : Web-App with WaF protection<br/>  
+`python standardwaf.py` : Only the WaF Inplementation (No Database)<br/>  
 - Visit http://127.0.0.1:5000/ in your browser.
 ## 🧑‍💻 How to Perform SQL Injection
 ### 🛑 1️⃣ Bypass Login Authentication
